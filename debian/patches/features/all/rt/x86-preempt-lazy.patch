@@ -153,9 +153,9 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 --- a/arch/x86/include/asm/thread_info.h
 +++ b/arch/x86/include/asm/thread_info.h
 @@ -55,11 +55,14 @@ struct task_struct;
- 
  struct thread_info {
  	unsigned long		flags;		/* low level flags */
+ 	u32			status;		/* thread synchronous flags */
 +	int                     preempt_lazy_count;     /* 0 => lazy preemptable
 +							   <0 => BUG */
  };

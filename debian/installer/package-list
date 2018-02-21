@@ -123,6 +123,13 @@ Priority: standard
 Description: JFS filesystem support
  This package contains the JFS filesystem module for the kernel.
 
+# Jose/Metztli IT 10-16-2017 reiser4 support
+Package: reiser4-modules
+Depends: kernel-image, crc-modules
+Priority: extra
+Description: Reiser4 filesystem support
+ This package contains the Reiser4 filesystem module for the kernel.
+
 Package: ntfs-modules
 Depends: kernel-image
 Priority: optional
