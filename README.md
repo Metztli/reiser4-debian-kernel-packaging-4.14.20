@@ -45,5 +45,17 @@ https://lists.debian.org/debian-kernel/2018/02/msg00173.html
 
 seems to be already applied to Linux kernel source tree 4.14.20
 
+P.S. YES! Bug#885166 fixed 4.14.20!
+
+...
+"If I used git correctly, then 4.14.20 already has
+2a266f23550be997d783f27e704b9b40c4010292, so I tried 4.14.19. 4.14.19 on
+the one virt host that had the most violent failures failed in the first
+hour of operation, but with a slightly different error behavior that I
+was used to. I am therefore not sure whether we are not talking about
+multiple issues, one of them having been fixed somewhere in between
+4.14.13 and 4.14.19."
+...
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=885166
 
 Huelmati [Enjoy]!
