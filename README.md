@@ -40,10 +40,10 @@ Added bonus for Linux 4.14.20 ;-)
 Likely fixed for Bug#885166: instability with 4.14 regarding KVM virtualization
 https://lists.debian.org/debian-kernel/2017/12/msg00374.html
 
-As referenced commit:
+since referenced commit:
 https://lists.debian.org/debian-kernel/2018/02/msg00173.html
 
-seems to be already already applied to Linux kernel source tree 4.14.20
+seems to be already applied to Linux kernel source tree 4.14.20
 
 
 Huelmati [Enjoy]!
