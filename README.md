@@ -5,14 +5,15 @@
  successfully wrap around pristine  kernel.org's Linux 4.14.20..."
 
 If you will be using this Debian kernel packaging hack, make sure to first to create a working
- directory, i.e., 
+ directory, i.e.,
+ 
 mkdir tlacauhtli
 
 (yes, in Nahuatl ;-)
 
 cd tlacauhtli
 
-git clone https://github.com/Metztli/reiser4-debian-kernel-packaging-4.14.20.git
+git clone https://github.com/Metztli/reiser4-debian-kernel-packaging-4.14.20.git linux
 
 (you will have a linux directory with linux/debian packaging directory)
 
