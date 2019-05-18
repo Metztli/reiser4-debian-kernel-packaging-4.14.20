@@ -24,7 +24,10 @@ make a symbolic link:
 (you will have a linux directory with linux/debian packaging directory)
 
 With a text editor, (like xvi < https://github.com/martinwguy/xvi > ;-),
- edit linux/debian/changelog by locating the line:
+ edit 
+`xvi linux/debian/changelog`
+
+ by locating the line:
 
 linux (4.14.17-1) unstable; urgency=medium
 
