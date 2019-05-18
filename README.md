@@ -13,7 +13,13 @@ mkdir tlacauhtli
 
 cd tlacauhtli
 
+clone this repository:
+
 git clone https://github.com/Metztli/reiser4-debian-kernel-packaging-4.14.20.git linux
+
+make a symbolic link:
+ 
+ln -s reiser4-debian-kernel-packaging-4.14.20 linux
 
 (you will have a linux directory with linux/debian packaging directory)
 
@@ -34,6 +40,11 @@ ln -s linux-4.14.20.tar.xz linux_4.14.20.orig.tar.xz
 
 (this last link in 'debian way' is necessary for the packaging routine to proceed)
 
+Download reiser4-for-4.14.1.patch.gz from: 
+
+https://sourceforge.net/projects/reiser4/
+
+-------------------------------------------------
 
 Added bonus for Linux 4.14.20 ;-)
 
