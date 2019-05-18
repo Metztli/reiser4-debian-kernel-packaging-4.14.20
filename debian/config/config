@@ -5347,6 +5347,13 @@ CONFIG_BINFMT_MISC=m
 CONFIG_COREDUMP=y
 
 ##
+## Jose/Metztli IT 05-18-2019
+## file: fs/reiser4/Kconfig
+##
+CONFIG_REISER4_FS=m
+# CONFIG_REISER4_DEBUG is not set
+
+##
 ## file: fs/btrfs/Kconfig
 ##
 CONFIG_BTRFS_FS=m

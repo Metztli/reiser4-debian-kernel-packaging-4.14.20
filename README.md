@@ -7,19 +7,19 @@
 If you will be using this Debian kernel packaging hack, make sure to first to create a working
  directory, i.e.,
  
-mkdir tlacauhtli
+`mkdir tlacauhtli`
 
 (yes, in Nahuatl ;-)
 
-cd tlacauhtli
+`cd tlacauhtli`
 
 clone this repository:
 
-git clone https://github.com/Metztli/reiser4-debian-kernel-packaging-4.14.20.git linux
+`git clone https://github.com/Metztli/reiser4-debian-kernel-packaging-4.14.20.git linux`
 
 make a symbolic link:
  
-ln -s reiser4-debian-kernel-packaging-4.14.20 linux
+`ln -s reiser4-debian-kernel-packaging-4.14.20 linux`
 
 (you will have a linux directory with linux/debian packaging directory)
 
@@ -34,9 +34,9 @@ linux (4.14.20-1) unstable; urgency=medium
 
 save your changes and download pristine source 4.14.20: 
 
-wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.20.tar.xz
+`wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.20.tar.xz`
 
-ln -s linux-4.14.20.tar.xz linux_4.14.20.orig.tar.xz
+`ln -s linux-4.14.20.tar.xz linux_4.14.20.orig.tar.xz`
 
 (this last link in 'debian way' is necessary for the packaging routine to proceed)
 
