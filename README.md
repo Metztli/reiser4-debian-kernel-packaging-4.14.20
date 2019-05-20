@@ -1,15 +1,24 @@
-"Official 4.14.x iterations of Debian kernel packaging for Unstable (Sid) ended with 4.14.17-1.
+Reiser4 -enabled/GCC6 Debian Kernel Packaging (wrapper) for Linux 4.14.17
+=========================================================================
+
+
+Official 4.14.x iterations of Debian kernel packaging for Unstable (Sid) ended with 4.14.17-1.
  Accordingly, there is no Debian kernel packaging for current upstream release Linux 4.14.20.
+
  Moreover, the currently available Reiser4 patch is for kernel 4.14.1+; thus I had to find a way
- to debianize for stretch-backports (GCC6) the last 'official' kernel packaging if it was to
- successfully wrap around pristine  kernel.org's Linux 4.14.20..."
+ to `debianize` for stretch-backports (GCC6) the last 'official' kernel packaging if it was to
+ successfully wrap around pristine kernel.org's Linux 4.14.20 for Metztli Reiser4 on AMD64.
+
+Note: real time (RT) kernel has been disabled in debian/config/defines as its parallel build at
+	debian/build/ location will merely slow down our reiser4 -patched linux kernel build.
+
 
 If you will be using this Debian kernel packaging hack, make sure to first to create a working
  directory, i.e.,
  
 `mkdir tlacauhtli`
 
-(yes, in Nahuatl ;-)
+(yes, in `Nahuatl` ;-)
 
 `cd tlacauhtli`
 
@@ -24,7 +33,8 @@ make a symbolic link:
 (you will have a linux directory with linux/debian packaging directory)
 
 With a text editor, (like xvi < https://github.com/martinwguy/xvi > ;-),
- edit 
+ edit
+ 
 `xvi linux/debian/changelog`
 
  by locating the line:
@@ -43,7 +53,8 @@ save your changes and download pristine source 4.14.20:
 
 (this last link in 'debian way' is necessary for the packaging routine to proceed)
 
-Download reiser4-for-4.14.1.patch.gz from: 
+Download the actual reiser4-for-4.14.1.patch.gz for your linux source (downloaded previously)
+from SourceForge: 
 
 https://sourceforge.net/projects/reiser4/
 
