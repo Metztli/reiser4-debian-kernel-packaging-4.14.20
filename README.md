@@ -11,6 +11,8 @@ Official 4.14.x iterations of Debian kernel packaging for Unstable (Sid) ended w
 
 Note: real time (RT) kernel has been disabled in debian/config/defines as its parallel build at
 	debian/build/ location will merely slow down our reiser4 -patched linux kernel build.
+Also:
+Updated kernel Documentation/sphinx/kerneldoc.py (making a backup too) to succeed in newer environments.
 
 
 If you will be using this Debian kernel packaging hack, make sure to first to create a working
@@ -57,6 +59,8 @@ Download the actual reiser4-for-4.14.1.patch.gz for your linux source (downloade
 from SourceForge: 
 
 https://sourceforge.net/projects/reiser4/
+
+Note: apply this patch to your kernel, else your build will fail as no reiser4 source will be found.
 
 -------------------------------------------------
 
